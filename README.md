@@ -1,4 +1,4 @@
-# Fieldmark
+# QR code Generator
 
 Pembuat kode QR dengan pratinjau langsung.
 
