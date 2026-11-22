@@ -1,0 +1,51 @@
+# Label path untuk PR router gratis (.github/workflows/pr-router.yml).
+# Labeler tidak pernah menjalankan kode PR; file ini hanya konfigurasi pencocokan path.
+
+frontend:
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/**
+          - public/**
+
+backend:
+  - changed-files:
+      - any-glob-to-any-file:
+          - server/**
+          - migrations/**
+
+governance:
+  - changed-files:
+      - any-glob-to-any-file:
+          - AGENTS.md
+
+deploy:
+  - changed-files:
+      - any-glob-to-any-file:
+          - vercel.json
+          - startup.sh
+
+scripts:
+  - changed-files:
+      - any-glob-to-any-file:
+          - scripts/**
+
+tests:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*.test.*"
+
+deps:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/package.json"
+          - "**/package-lock.json"
+
+docs:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*.md"
+
+ci:
+  - changed-files:
+      - any-glob-to-any-file:
+          - ".github/**"
